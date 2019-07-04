@@ -1,0 +1,64 @@
+.box {
+  padding: 1%;
+//   text-align: center;
+  .icon {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 100%;
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 95%;
+    line-height: 145%;
+    text-align: left;
+  }
+}
+
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .box{
+    .title{
+      font-size: 90%!important;
+    }
+    .text {
+      font-size: 85%;
+    }
+  }
+  
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .box{
+    .title{
+      font-size: 80%!important;
+    }
+    .text {
+      font-size: 75%;
+    }
+  }
+  
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .box {
+    margin-bottom: 20px;
+    .icon{
+      margin-bottom: 5px;
+    }
+  }
+}

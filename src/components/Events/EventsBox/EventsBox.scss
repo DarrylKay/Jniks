@@ -1,0 +1,125 @@
+.row {
+  .box {
+    padding: 1%;
+    
+    .events-image {
+      width: 60%;
+      height: 250px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    h3 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 100%;
+      margin-bottom: 15px;
+    }
+    .info-section {
+      display: inline-block;
+      text-align: left;
+      div {
+        display: inline-block;
+      }
+      p {
+        font-size: 95%;
+        line-height: 18px;
+        vertical-align: top;
+        letter-spacing: 1px;
+        text-align: left;
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .email {
+        text-decoration: underline;
+        color: #c0392b;
+      }
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .box {
+    .info-section {
+      .event-text {
+        font-size: 85% !important;
+      }
+    }
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .box {
+    .event-title {
+      font-size: 73% !important;
+    }
+    .info-section {
+      .event-text {
+        font-size: 65% !important;
+      }
+    }
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 980px) {
+  .box {
+    .events-image {
+      height: auto !important;
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .box {
+    text-align: center;
+    .info-section {
+      text-align: center !important;
+      .event-text {
+        font-size: 67% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .box {
+    .info-section {
+      div {
+        display: block !important;
+        margin-bottom: 5px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .box {
+    width: 80%;
+    margin: 0 10% !important;
+    .events-image {
+      width: 80% !important;
+    }
+    .event-title {
+      font-size: 90% !important;
+    }
+    .info-section {
+      text-align: center !important;
+      margin-bottom: 20px !important;
+      .event-text {
+        font-size: 85% !important;
+      }
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+}

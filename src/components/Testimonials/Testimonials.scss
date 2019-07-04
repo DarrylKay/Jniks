@@ -1,0 +1,76 @@
+.section-testimonials {
+  padding: 60px 0;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(0, 0, 0, 0.8))
+    ),
+    url(../../img/jniks-wood.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../img/jniks-wood.gif);
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+  background-attachment: fixed;
+  .row {
+    h2 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 180%;
+      word-spacing: 2px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: white;
+      &::after {
+        display: block;
+        height: 2px;
+        background-color: #c0392b;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .row {
+    h2 {
+      font-size: 165% !important;
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .section-testimonials {
+    background-attachment: initial !important;
+  }
+  .row {
+    h2 {
+      font-size: 140% !important;
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .section-testimonials {
+    background-attachment: initial !important;
+  }
+  .row {
+    h2 {
+      font-size: 108% !important;
+    }
+  }
+}

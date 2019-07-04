@@ -1,0 +1,82 @@
+.row {
+  .col {
+    .block {
+      color: white;
+      padding: 2%;
+      font-style: italic;
+      line-height: 145%;
+      font-size: 125%;
+      position: relative;
+      margin-top: 40px;
+      font-weight: 300;
+      &::before {
+        content: "\201C";
+        font-size: 500%;
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+      }
+    }
+    .test-cite {
+      color: white;
+      font-size: 90%;
+      margin-top: 35px;
+      margin-left: 10px;
+      .test-img {
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        margin-right: 20px;
+        margin-top: 25px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .col {
+    .block {
+      font-size: 110% !important;
+      margin-top: 40px;
+      &::before {
+        content: "\201C";
+        font-size: 500%;
+      }
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 550px) {
+  .text-box {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 3% 0;
+
+    .block {
+      margin-bottom: 15px !important;
+      &::before {
+        content: "\201C";
+        width: 100%;
+        -ms-flex-line-pack: right !important;
+            align-content: right !important;
+      }
+    }
+    .test-cite {
+      .test-img {
+        float: center !important;
+      }
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+}

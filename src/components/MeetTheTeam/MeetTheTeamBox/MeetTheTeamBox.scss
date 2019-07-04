@@ -1,0 +1,113 @@
+.row {
+  .team-box {
+    h2 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 180%;
+      word-spacing: 2px;
+      text-align: center;
+      &::after {
+        display: none;
+      }
+    }
+    .meetImgBox {
+      width: 100%;
+      text-align: center;
+      .meetImg {
+        border-radius: 2px;
+        width: 170px;
+        height: 200px;
+        border: 1px solid grey;
+      }
+    }
+    blockquote {
+      padding: 2%;
+      font-style: italic;
+      line-height: 145%;
+      font-size: 115%;
+      position: relative;
+      margin-top: 25px;
+      font-weight: 600;
+      color: rgb(25, 25, 25);
+      &::before {
+        content: "\201C";
+        font-size: 500%;
+        display: block;
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        color: #c0392b;
+      }
+    }
+    cite {
+      padding: 5%;
+      span {
+        color: #c0392b;
+        font-size: 120%;
+      }
+      color: #000;
+      font-size: 90%;
+      margin-top: 35px;
+      margin-left: 10px;
+      font-weight: 300;
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+    .team-box {
+      padding: 0 1%;
+      cite {
+        margin-left: 15px !important;
+        //this is where i left off last
+      }
+    }
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .row {
+    .team-box {
+      .meetImgBox {
+        .meetImg {
+          margin-bottom: 20px !important;
+        }
+      }
+      blockquote {
+        font-size: 98% !important;
+      }
+      cite {
+        font-size: 93% !important;
+      }
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .row {
+    .team-box {
+      margin-left: 3px !important;
+      blockquote {
+        font-size: 93% !important;
+      }
+      cite {
+        font-size: 88% !important;
+      }
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .row {
+    .team-box {
+      padding: 8% 2% 0 2%;
+    }
+  }
+}

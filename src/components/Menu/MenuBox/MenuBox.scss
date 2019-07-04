@@ -1,0 +1,95 @@
+.plan-box {
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  .img-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    .menu-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .btn-box {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  div {
+    h3 {
+      text-transform: uppercase;
+      font-size: 130%;
+      font-weight: 400;
+      padding: 15px;
+      text-align: center;
+    }
+    button {
+      padding: 0px;
+      text-decoration: none;
+      img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2% !important;
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .row {
+    .span-1-of-4 {
+      width: 49%;
+      margin: 2% 0.5%;
+      .plan-box {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .row {
+    .span-1-of-4 {
+      width: 100%;
+      margin: 5% 2%;
+      .plan-box {
+        width: 90%;
+      }
+    }
+  }
+}

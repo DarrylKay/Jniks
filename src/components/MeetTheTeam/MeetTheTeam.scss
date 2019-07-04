@@ -1,0 +1,53 @@
+.section-meet-the-team {
+  padding: 70px 0;
+  background-color: #f4f4f4;
+  .row {
+    h2 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 180%;
+      word-spacing: 2px;
+      text-align: center;
+      margin-bottom: 30px;
+      &::after {
+        display: block;
+        height: 2px;
+        background-color: #c0392b;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .row {
+    h2 {
+      font-size: 145% !important;
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .row {
+    h2 {
+      font-size: 125% !important;
+    }
+  }
+}

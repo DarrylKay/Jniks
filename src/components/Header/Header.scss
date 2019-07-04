@@ -1,0 +1,147 @@
+//************ Header Styling**********
+
+header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../../img/header-img.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../img/header-img.gif);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  z-index: -1;
+  background-attachment: fixed;
+  .hero-text-box {
+    position: absolute;
+    width: 1040px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    h1 {
+      font-size: 250%;
+      font-weight: 300;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      word-spacing: 4px;
+      line-height: 120%;
+    }
+  }
+}
+
+//********* HeaderBtn Styling**********
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 300;
+  margin: 10px 15px 0 0;
+  border-radius: 200px;
+  font-size: 85%;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.btn-area {
+  display: inline-block;
+}
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 300;
+  margin: 10px 15px 0 0;
+  border-radius: 200px;
+  font-size: 85%;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+  background-color: #c0392b;
+  border: 1px solid #c0392b;
+  color: #fff;
+  &:hover,
+  &:active {
+    background-color: #7b241b;
+    cursor: pointer;
+  }
+}
+.btn-fill {
+  background-color: #c0392b;
+  border: 1px solid #c0392b;
+  color: #fff;
+  &:hover,
+  &:active,
+  input[type="submit"] {
+    background-color: #7b241b;
+    cursor: pointer;
+  }
+}
+.btn-outline {
+  border: 1px solid #c0392b;
+  color: #e74c3c;
+  &:hover,
+  &:active {
+    background-color: #7b241b;
+    border: 1px solid #7b241b;
+    color: white;
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  header {
+    .hero-text-box {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+  .row {
+    padding: 0 5%;
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  header {
+    .hero-text-box {
+      h1 {
+        font-size: 175%;
+      }
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  header {
+    background-attachment: initial !important;
+    .hero-text-box {
+      h1 {
+        font-size: 150%;
+        margin-left: 40px;
+      }
+    }
+    #header-btn {
+      margin-left: 30px;
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  header {
+    background-attachment: initial !important;
+    .hero-text-box {
+      h1 {
+        font-size: 125%;
+      }
+    }
+  }
+}

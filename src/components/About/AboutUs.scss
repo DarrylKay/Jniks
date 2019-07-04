@@ -1,0 +1,79 @@
+.section-features {
+  padding: 70px 0;
+  .row {
+    h2 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 180%;
+      word-spacing: 2px;
+      text-align: center;
+      margin-bottom: 30px;
+      &::after {
+        display: block;
+        height: 2px;
+        background-color: #c0392b;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+    }
+    .long-copy {
+      line-height: 145%;
+      width: 75%;
+      margin-left: 12.5%;
+      margin-bottom: 45px;
+      font-size: 98%;
+    }
+  }
+}
+
+//big tablets + : from 1024px to 1200px
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+}
+
+//small tablet to big tablet: from 768px to 1023px
+@media only screen and (max-width: 1023px) {
+  .row {
+    h2 {
+      font-size: 175% !important;
+    }
+    .long-copy {
+      font-size: 93% !important;
+    }
+  }
+}
+
+//small phones to small tablets: from 481px to 767px
+@media only screen and (max-width: 767px) {
+  .row {
+    h2 {
+      font-size: 145% !important;
+    }
+    .long-copy {
+      width: 85%!important;
+      margin-left: 7.5%!important;
+      margin-bottom: 30px!important;
+      font-size: 80% !important;
+    }
+  }
+}
+
+//small phones: from 0 to 480px
+@media only screen and (max-width: 480px) {
+  .row {
+    h2 {
+      font-size: 125% !important;
+    }
+    .long-copy {
+      width: 85%!important;
+      margin-left: 7.5%!important;
+      margin-bottom: 20px!important;
+      font-size: 80% !important;
+    }
+  }
+}
