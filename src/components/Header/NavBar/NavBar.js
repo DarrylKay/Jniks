@@ -14,7 +14,7 @@ export default class NavBar extends Component {
       <nav>
         <div className="row nav-row">
           <img
-            src={require("../../../img/JNIKS-LOGO-NEW.png")}
+            src={require("../../../img/JNIKS-LOGO-NEW.jpg")}
             alt="jniks logo"
             className="logo"
             onClick={this.scrollToTop}

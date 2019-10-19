@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import carvery from "../../img/carvery-1.JPG";
+import carvery from "../../img/carvery-1.jpg";
 import punjabanLogo from "../../img/punjaban-logo.jpg";
-import cobblersVan from "../../img/cobblers-van.JPG";
-import beerfestNick from "../../img/beerfest-nick-test.JPG";
-import beerfestDisplay from "../../img/beerfest-display.JPG";
-import noodles from "../../img/noodle-bar-1.JPG";
-import jniksFood from "../../img/jniks-food.jpg";
+import cobblersVan from "../../img/cobblers-van.jpg";
+import beerfestNick from "../../img/beerfest-nick-test.jpg";
+import noodles from "../../img/noodle-bar-1.jpg";
+import bugJam from "../../img/bug-jam-2.jpg";
 import team from "../../img/team.jpg";
+import weddingSetting from '../../img/wedding-setting.jpg';
 
 import "./FavouriteMeals.scss";
 import "../../grid.scss";
@@ -16,14 +16,14 @@ export default class FavouriteMeals extends Component {
     super();
     this.state = {
       imgArr: [
-        { name: cobblersVan, alt: "Cobblers van" },
-        { name: carvery, alt: "Carvery" },
-        { name: punjabanLogo, alt: "Punjaban Logo" },
-        { name: noodles, alt: "Noodles Bar" },
-        { name: beerfestDisplay, alt: "Beer Festival Display" },
-        { name: beerfestNick, alt: "Beer Festival Nick Cooking" },
-        { name: jniksFood, alt: "J'niks Food" },
-        { name: team, alt: "Our Team" }
+        { name: cobblersVan, alt: "J'niks events catering Cobblers van" },
+        { name: carvery, alt: "J'niks events catering Carvery" },
+        { name: punjabanLogo, alt: "J'niks events catering Punjaban Logo" },
+        { name: noodles, alt: "J'niks events catering Noodles Bar" },
+        { name: weddingSetting, alt: "J'niks events catering j'niks wedding setting" },
+        { name: beerfestNick, alt: "J'niks events catering Beer Festival Nick Cooking" },
+        { name: bugJam, alt: "J'niks events catering Bug Jam Tent" },
+        { name: team, alt: "J'niks events catering Our Team" }
       ]
     };
   }

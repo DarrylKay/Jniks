@@ -37,7 +37,7 @@ export default class TestimonialsBox extends Component {
             <div className="col span-1-of-2 team-box" key={i}>
               <h2>{meet.name}</h2>
               <div className="meetImgBox">
-                <img src={meet.src} alt={meet.name} className="meetImg" />
+                <img src={meet.src} alt={`J'niks events catering ${meet.name}`} className="meetImg" />
               </div>
               <blockquote>{meet.quote}</blockquote>
               <cite>

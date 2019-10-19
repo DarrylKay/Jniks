@@ -6,8 +6,8 @@ import IosRestaurantOutline from "react-ionicons/lib/IosRestaurantOutline";
 import IosMailOutline from "react-ionicons/lib/IosMailOutline";
 import IosCallOutline from "react-ionicons/lib/IosCallOutline";
 import cobblersMenuBoard from "../../img/cobblers-menuboard.jpg";
-import beerfestNick from "../../img/beerfest-nick.JPG";
-import events from "../../img/events-pic.JPG";
+import beerfestNick from "../../img/beerfest-nick.jpg";
+import events from "../../img/events-pic.jpg";
 
 export default class Events extends Component {
   render() {

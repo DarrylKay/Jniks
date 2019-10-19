@@ -2,18 +2,22 @@ import React, { Component } from "react";
 import "../../../grid.scss";
 import "./EventsBox.scss";
 import Lightbox from "lightbox-react";
-import beerfestBoard from "../../../img/beerfest-board.JPG";
-import beerfestDisplay from "../../../img/beerfest-display.JPG";
-import beerfestDisplay2 from "../../../img/beerfest-display2.JPG";
-import beerfestFood from "../../../img/beerfest-food.JPG";
-import beerfestNick2 from "../../../img/beerfest-nick2.JPG";
-import beerfestStand from "../../../img/beerfest-stand.JPG";
-import beerfestStand2 from "../../../img/beerfest-stand2.JPG";
-import cranstonMusicDisplay from "../../../img/cranston-music-display.jpeg";
-import cranstonMusicLeaflet from "../../../img/cranston-music-leaflet.jpeg";
-import cranstonMusicTent from "../../../img/cranston-music-tent.jpeg";
-import cranstonMusicTent2 from "../../../img/cranston-music-tent2.jpeg";
-import cobblersMenu from "../../../img/cobblers-menu.JPG";
+import beerfestBoard from "../../../img/beerfest-board.jpg";
+import beerfestDisplay from "../../../img/beerfest-display.jpg";
+import beerfestDisplay2 from "../../../img/beerfest-display2.jpg";
+import beerfestFood from "../../../img/beerfest-food.jpg";
+import beerfestNick2 from "../../../img/beerfest-nick2.jpg";
+import beerfestStand from "../../../img/beerfest-stand.jpg";
+import beerfestStand2 from "../../../img/beerfest-stand2.jpg";
+import bugJam from "../../../img/bug-jam.jpg";
+import bugJam2 from "../../../img/bug-jam-2.jpg";
+import bugJam3 from "../../../img/bug-jam-3.jpg";
+import bugJam4 from "../../../img/bug-jam-4.jpg";
+import cranstonMusicDisplay from "../../../img/cranston-music-display.jpg";
+import cranstonMusicLeaflet from "../../../img/cranston-music-leaflet.jpg";
+import cranstonMusicTent from "../../../img/cranston-music-tent.jpg";
+import cranstonMusicTent2 from "../../../img/cranston-music-tent2.jpg";
+import cobblersMenu from "../../../img/cobblers-menu.jpg";
 import cobblersMain from "../../../img/cobblers-main.jpg";
 import cobblersMeat from "../../../img/cobblers-meat.jpg";
 import cobblersMenuBoard from "../../../img/cobblers-menuboard.jpg";
@@ -25,8 +29,27 @@ import punjabanLayout from "../../../img/punjaban-layout.jpg";
 import punjabanLogo from "../../../img/punjaban-logo.jpg";
 import punjabanPlate from "../../../img/punjaban-plate.jpg";
 import punjabanPlate2 from "../../../img/punjaban-plate2.jpg";
+import weddingCakes from '../../../img/wedding-cakes.jpg';
+import weddingFood1 from '../../../img/wedding-food1.jpg';
+import weddingFood2 from '../../../img/wedding-food2.jpg';
+import weddingNick1 from '../../../img/wedding-nick1.jpg';
+import weddingNick2 from '../../../img/wedding-nick2.jpg';
+import weddingSetting from '../../../img/wedding-setting.jpg';
+
+
+
 
 const images = [
+  weddingNick2,
+  weddingFood2,
+  weddingNick1,
+  weddingFood1,
+  weddingCakes,
+  weddingSetting,
+  bugJam,
+  bugJam2,
+  bugJam3,
+  bugJam4,
   cranstonMusicLeaflet,
   cranstonMusicDisplay,
   cranstonMusicTent,
@@ -71,7 +94,7 @@ export default class EventsBox extends Component {
       <div className="box col span-1-of-3">
         <img
           src={this.props.src}
-          alt={this.props.title}
+          alt={`J'niks events catering ${this.props.title}`}
           className="events-image"
           style={styles}
           onClick={() => this.setState({ isOpen: true })}

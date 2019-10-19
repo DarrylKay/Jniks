@@ -39,7 +39,7 @@ export default class TestimonialsBox extends Component {
           <div className="col span-1-of-3 text-box" key={i}>
             <blockquote className='block'>{test.quote}</blockquote>
             <cite className='test-cite'>
-              <img src={test.src} alt={test.name} className='test-img'/>
+              <img src={test.src} alt={`J'niks events catering ${test.name}`} className='test-img'/>
               {test.name}
             </cite>
           </div>

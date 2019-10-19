@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Social.scss";
 import "../../grid.scss";
 import Bounce from 'react-reveal/Bounce';
-import social from "../../img/iphone-social2.png";
-import facebook from "../../img/facebook.png";
-import twitter from "../../img/twitter.png";
+import social from "../../img/iphone-social2.jpg";
+import facebook from "../../img/facebook.jpg";
+import twitter from "../../img/twitter.jpg";
 import instagram from "../../img/instagram.jpg";
 
 export default class Social extends Component {
@@ -41,7 +41,7 @@ export default class Social extends Component {
             <Bounce bottom duration={600}>
               <img
                 src={social}
-                alt="Get in touch on social media"
+                alt="J'niks events catering Get in touch on social media"
                 className="social-screen"
               />
             </Bounce>
@@ -57,17 +57,17 @@ export default class Social extends Component {
               <a href="https://www.facebook.com/JNIKS4/?ref=py_c">
                 <img
                   src={facebook}
-                  alt="J'niks Facebook page"
+                  alt="J'niks events catering J'niks Facebook page"
                   className="icon"
                 />
               </a>
               <a href="https://twitter.com/Jniks018">
-                <img src={twitter} alt="J'niks twitter page" className="icon" />
+                <img src={twitter} alt="J'niks events catering J'niks twitter page" className="icon" />
               </a>
               <a href="https://www.instagram.com/jniks018/?hl=en">
                 <img
                   src={instagram}
-                  alt="J'niks instagram page"
+                  alt="J'niks events catering J'niks instagram page"
                   className="icon"
                 />
               </a>
