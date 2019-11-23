@@ -63,17 +63,17 @@ export default class Footer extends Component {
           <div className="col span-1-of-2 footer-box">
             <ul className="social-link">
               <li>
-                <a href="https://www.facebook.com/JNIKS4/?ref=py_c">
+                <a href="https://www.facebook.com/JNIKS4/?ref=py_c" aria-label='jniks events catering facebook page'>
                   <LogoFacebook color="#888" fontSize="25px" />
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/Jniks018">
+                <a href="https://twitter.com/Jniks018" aria-label='jniks events catering twitter page'>
                   <LogoTwitter color="#888" fontSize="25px" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/jniks018/?hl=en">
+                <a href="https://www.instagram.com/jniks018/?hl=en" aria-label='jniks events catering instagram page'>
                   <LogoInstagram color="#888" fontSize="25px" />
                 </a>
               </li>

@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(46, 45, 45);
+  background-color: rgb(43, 42, 42);
   padding: 35px;
   font-size: 90%;
   .row {
@@ -16,13 +16,13 @@
       margin-left: 20px;
       text-decoration: none;
       border: 0;
-      color: #888;
+      color: lightgrey;
       -webkit-transition: color 0.4s;
       transition: color 0.4s;
       cursor: pointer;
       &:hover,
       &:active {
-        color: #ddd;
+        color: darkgrey;
         text-decoration: underline;
       }
     }

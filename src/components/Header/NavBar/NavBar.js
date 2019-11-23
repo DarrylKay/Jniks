@@ -15,7 +15,7 @@ export default class NavBar extends Component {
         <div className="row nav-row">
           <img
             src={require("../../../img/JNIKS-LOGO-NEW.jpg")}
-            alt="jniks logo"
+            alt="jniks events catering jniks logo"
             className="logo"
             onClick={this.scrollToTop}
           />
@@ -94,7 +94,7 @@ export default class NavBar extends Component {
             </li>
           </ul>
           <div className="menu-wrap">
-            <input type="checkbox" className="toggler" />
+            <input type="checkbox" className="toggler" aria-label='jniks events catering hamburger'/>
             <div className="hamburger">
               <div />
             </div>
