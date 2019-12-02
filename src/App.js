@@ -10,6 +10,7 @@ import Menu from "./components/Menu/Menu";
 import MeetTheTeam from "./components/MeetTheTeam/MeetTheTeam";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Millies from './components/Millies/Millies';
 
 class App extends Component {
   constructor() {
@@ -29,6 +30,7 @@ class App extends Component {
         <MeetTheTeam />
         <Testimonials />
         <Events />
+        <Millies/>
         <Social />
         <Contact />
         <Footer />

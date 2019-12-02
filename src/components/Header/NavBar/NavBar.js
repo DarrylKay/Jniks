@@ -71,6 +71,18 @@ export default class NavBar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
+                to="Millies"
+                spy={true}
+                smooth={true}
+                //offset={-70}
+                duration={1000}
+              >
+                Millies Kitchen
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                activeClass="active"
                 to="Social"
                 spy={true}
                 smooth={true}
@@ -148,6 +160,18 @@ export default class NavBar extends Component {
                         duration={1000}
                       >
                         Events
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        activeClass="active"
+                        to="Millies"
+                        spy={true}
+                        smooth={true}
+                        //offset={-70}
+                        duration={1000}
+                      >
+                       Millies Kitchen
                       </Link>
                     </li>
                     <li>
